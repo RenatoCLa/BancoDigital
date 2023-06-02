@@ -14,6 +14,26 @@ public abstract class Conta implements IConta{
         this.numero = SEQUENCIAL++;
     }
 
+    @Override
+    public void sacar(double valor) {
+        this.saldo -= valor;
+    }
+
+    @Override
+    public void depositar(double valor) {
+        this.saldo += valor;
+    }
+
+    @Override
+    public void transferir(double valor, Conta contaDestino) {
+        this.sacar(valor);
+        contaDestino.depositar(valor);
+    }
+
+    public void imprimirExtrato(){
+        
+    }
+
     public int getAgencia(){
         
         return agencia;
@@ -27,19 +47,5 @@ public abstract class Conta implements IConta{
     public double getSaldo(){
 
         return saldo;
-    }
-
-    @Override
-    public void sacar(double valor) {
-
-    }
-
-    @Override
-    public void depositar(double valor) {
-
-    }
-
-    @Override
-    public void transferir(double valor, Conta contaDestino) {
     }
 }
