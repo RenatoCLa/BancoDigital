@@ -34,7 +34,7 @@ public class Main {
         for(int i = 0; i != 6;){
             System.out.println();
             System.out.println("Selecione uma operação");
-            System.out.println("1-Depositar \n2-Sacar \n3-Transferir \n4-Extrato \n5-Extrato MÃE \n6-Fechar");
+            System.out.println("1-Depositar \n2-Sacar \n3-Transferir \n4-Extrato\n5-Extrato Conta-Teste \n6-Fechar");
             int y = sc.nextInt();
             i = y;
             switch(y){
