@@ -7,11 +7,11 @@ public abstract class Conta implements IConta{
 
     protected int agencia;
     protected int numero;
-    protected double saldo = 0;
+    protected double saldo;
 
     public Conta(){
         this.agencia = Conta.AGENCIA_PADRAO;
-        this.numero = SEQUENCIAL++;
+        this.numero = Conta.SEQUENCIAL++;
     }
 
     @Override
@@ -30,8 +30,10 @@ public abstract class Conta implements IConta{
         contaDestino.depositar(valor);
     }
 
-    public void imprimirExtrato(){
-        
+    protected void imprimirInfosComuns() {
+        System.out.println(String.format("Agencia: %d", this.agencia));
+        System.out.println(String.format("Numero: %d", this.numero));
+        System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
 
     public int getAgencia(){
