@@ -31,7 +31,7 @@ public class Cliente {
         this.nome = nome;
     }
 
-    public int getCPF(){
+    public String getCPF(){
 
         return CPF;
     }
