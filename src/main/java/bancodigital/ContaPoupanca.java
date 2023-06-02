@@ -2,6 +2,8 @@ package bancodigital;
 
 public class ContaPoupanca extends Conta {
 
+    
+
     public ContaPoupanca(Cliente cliente) {
         super(cliente);
     }
@@ -11,4 +13,6 @@ public class ContaPoupanca extends Conta {
         System.out.println("=== Extrato Conta Poupanca ===");
         super.imprimirInfosComuns();
     }
+
+
 }
