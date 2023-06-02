@@ -36,7 +36,7 @@ public class Cliente {
         return CPF;
     }
 
-    public void setCPF(int CPF){
+    public void setCPF(String CPF){
 
         this.CPF = CPF;
     }

@@ -8,7 +8,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         Conta c;
-        Conta c1 = new ContaCorrente(new Cliente("Mãe", 06017634593));
+        Conta c1 = new ContaCorrente(new Cliente("Mãe", "123456789-12"));
 
         System.out.println("Banco de Guanambi");
         System.out.println("Criação de Conta");
